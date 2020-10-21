@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 2</title>
+</head>
+<body>
+
+    <input type="text" id="check12">
+    <input type="button" value="check" onclick=controle()>
+        
+
+
+</body>
+
+<script>
+    function controle(){
+        var veldje = document.getElementById("check12").value; 
+        for(var i = 0; i < veldje.length ; i++){ 
+            if( "e" == veldje[i]){
+                alert("Er zit een E in.");
+
+            }
+
+        }
+    }
+
+
+</script>
+
+
+</html>
+
+<!-- wat is de startsituatie, (var i = 0) wanneer mogen we nog een rondje? (i <woord.lenght.) Wat doen we na ieder rondje. (i++) -->

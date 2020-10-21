@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="text" id="check20">
+    <HR></HR>
+    <input type="text" id="check40">
+    <input type="button" value="check" onclick=controle()>
+
+</body>
+
+<Script>
+function controle(){
+    var testveld = document.getElementById("check20").value;
+    for( var i = 0; i < testveld.length ; i++){
+        if( "e" == testveld[i]){
+            alert("er zit een e in");
+        }
+    }
+        
+    
+}
+
+</Script>
+
+</html>
