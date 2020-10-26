@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+</head>
+
+
+<script>
+
+    alert("Yo welkom bij mijn website");
+    alert("Geniet er van");
+        function a(){
+            document.getElementById("antwoorda").innerHTML = "dit is antwoord A"
+        }
+        
+        
+        
+
+    
+        function b(){
+            document.getElementById("antwoordb").innerHTML = "dit is antwoord B"
+        }
+            function c(){
+                document.getElementById("antwoordc").innerHTML = "dit is antwoord C"
+                document.getElementById("antwoordc2").innerHTML = "dit is antwoord D"
+                document.getElementById("antwoordc3").innerHTML = "dit is antwoord C"
+                var klik = document.getElementById("antwoordb");
+                    if ("2" == klik){
+                        alert("Ho stop eens op C te drukken");
+                    }
+            }
+                function d(){
+                    document.getElementById("antwoordd").innerHTML = "dit is antwoord C"
+                    document.getElementById("antwoordd2").innerHTML = "dit is antwoord D"
+                    
+                }
+
+</script>
+
+<body>
+
+
+<input type=button value="Antwoord A" onclick="a()">
+<div id=antwoorda ></div>
+ 
+<input type=button value="Antwoord B" onclick="b()">
+<div id=antwoordb ></div>
+
+<input type=button value="Antwoord C" onclick="c()">
+<div id=antwoordc ></div>
+<div id=antwoordc2 ></div>
+<div id=antwoordc3 ></div>
+<div id=antwoordc4 ></div>
+
+<input type=button value="Antwoord D" onclick="d()">
+<div id=antwoordd ></div>
+<div id=antwoordd2 ></div>
+
+</body>
