@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+
+<script>
+
+ var seizoenen = ["Lente.jpg", "Zomer.jpg", "Herfst.jpg", "Winter.jpg"]
+ var tellerx1 = 0;
+ var tellerx2 = 0;
+function knopA(){
+    document.getElementById("plaatje A").src = seizoenen[tellerx1];
+    tellerx1 ++;
+    if (tellerx1 == 4){
+        tellerx1 = 0;
+    }
+}
+
+
+function knopB(){
+   document.getElementById("plaatje B").src = seizoenen[tellerx2];
+    tellerx2 ++;
+    if (tellerx2 == 4){
+        tellerx2 = 0;
+    }
+}
+
+function knopC(){
+    if(tellerx1 == tellerx2){
+    console.log ("gelijk");
+    }
+        else{
+            console.log ("niet gelijk");
+        }
+}
+
+</script>
+
+<body>
+    <img id="plaatje A" src="Lente.jpg" height="200">
+    <img id="plaatje B" src="Lente.jpg" height="200">
+    <p>
+     <input type="button" value="Knopje A" id="knopKNA" onclick="knopA()">
+     <input type="button" value="Knopje B" id="knopKNB" onclick="knopB()">
+     <input type="button" value="Knopje C" id="knopKNC" onclick="knopC()">
+        </p>
+</body>
+</html>
